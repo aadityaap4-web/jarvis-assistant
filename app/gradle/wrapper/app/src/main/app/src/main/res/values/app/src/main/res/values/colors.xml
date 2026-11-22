@@ -1,0 +1,7 @@
+<resources>
+    <color name="jarvis_bg">#0B0F1A</color>
+    <color name="jarvis_accent">#00D1FF</color>
+    <color name="jarvis_text">#E6F7FF</color>
+    <color name="jarvis_card">#121829</color>
+    <color name="ic_launcher_background">#0B0F1A</color>
+</resources>
