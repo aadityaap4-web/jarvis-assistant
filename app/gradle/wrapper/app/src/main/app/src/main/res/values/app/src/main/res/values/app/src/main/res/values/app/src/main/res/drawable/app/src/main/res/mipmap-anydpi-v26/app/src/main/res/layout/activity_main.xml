@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/jarvis_bg"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JARVIS"
+        android:textColor="@color/jarvis_accent"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.15"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type or speak a command"
+        android:textColor="#8FB4C9"
+        android:textSize="13sp"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:id="@+id/logScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/jarvis_card"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/logText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/jarvis_text"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:text="Jarvis online. Try: &quot;open whatsapp&quot;, &quot;call Karthik&quot;, &quot;search best biryani near me&quot;, &quot;whatsapp Karthik saying running late&quot;." />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/commandInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="e.g. call Karthik"
+            android:textColorHint="#5C7A8A"
+            android:textColor="@color/jarvis_text"
+            android:inputType="text"
+            android:imeOptions="actionGo"
+            android:background="@color/jarvis_card"
+            android:padding="14dp" />
+
+        <ImageButton
+            android:id="@+id/micButton"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:background="@color/jarvis_card"
+            android:contentDescription="Voice command" />
+
+        <Button
+            android:id="@+id/runButton"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:text="Run"
+            android:textColor="@color/jarvis_bg"
+            android:backgroundTint="@color/jarvis_accent
